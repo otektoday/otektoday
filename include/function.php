@@ -93,11 +93,11 @@ function smtpmailer($to, $from, $from_name, $subject, $body, $repemail, $sendern
 	$mail->SMTPDebug = 0;  // debugging: 1 = errors and messages, 2 = messages only
 	$mail->SMTPAuth = true;  // authentication enabled
 	$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // secure transfer enabled REQUIRED for GMail
-	$mail->Host = 'mail.bespokeclinics.com';
+	$mail->Host = 'mail.domain.com';
 	$mail->Port = 587;
 	$mail->isHTML(true);
-	$mail->Username = 'ws@bespokeclinics.com';
-	$mail->Password = '4PTUhM%X2{go';
+	$mail->Username = 'admin@domain.com';
+	$mail->Password = 'qwe987sf%$#';
 	$mail->setFrom($from, $from_name);
 	$mail->Subject = base64_decode($subject);
 	// $mail->addAttachment('../attchments/otektoday-AboutUs.pdf','otektoday-AboutUs');
